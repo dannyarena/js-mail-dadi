@@ -21,6 +21,23 @@ const listaEmail = [
 
   checkButton.addEventListener("click", function() {
     const emailUtente = emailInput.value;
-    console.log("Hai inserito:", emailUtente);
+  
+    // Variabile di partenza: supponiamo che l'email non sia trovata
+    let emailTrovata = false;
+  
+    // Controllo ogni email della lista
+    for (let i = 0; i < listaEmail.length; i++) {
+      if (emailUtente === listaEmail[i]) {
+        emailTrovata = true;
+      }
+    }
+  
+    // Mostro il risultato
+    if (emailTrovata) {
+      risultato.textContent = "Benvenuto alla festa! 🎉";
+    } else {
+      risultato.textContent = "Spiacente, non sei nella lista. 😔";
+    }
   });
+  
   
