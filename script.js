@@ -43,3 +43,7 @@ const listaEmail = [
   
   const rollButton = document.getElementById("rollDiceBtn");
 const diceResult = document.getElementById("diceResult");
+
+rollButton.addEventListener("click", function() {
+  });
+  
