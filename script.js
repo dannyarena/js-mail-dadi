@@ -14,3 +14,6 @@ const listaEmail = [
     "toad@example.com"
   ];
   
+  const emailInput = document.getElementById("userEmail");
+  const checkButton = document.getElementById("checkEmailBtn");
+  const risultato = document.getElementById("emailResult");
