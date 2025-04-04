@@ -7,7 +7,7 @@
 
 
 const listaEmail = [
-    "mario@example.com",
+    "   ",
     "luigi@example.com",
     "peach@example.com",
     "danny@example.com",
@@ -17,3 +17,10 @@ const listaEmail = [
   const emailInput = document.getElementById("userEmail");
   const checkButton = document.getElementById("checkEmailBtn");
   const risultato = document.getElementById("emailResult");
+
+
+  checkButton.addEventListener("click", function() {
+    const emailUtente = emailInput.value;
+    console.log("Hai inserito:", emailUtente);
+  });
+  
