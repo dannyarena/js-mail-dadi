@@ -45,5 +45,10 @@ const listaEmail = [
 const diceResult = document.getElementById("diceResult");
 
 rollButton.addEventListener("click", function() {
+    const numeroGiocatore = Math.floor(Math.random() * 6) + 1;
+const numeroComputer = Math.floor(Math.random() * 6) + 1;
+
+let messaggio = `Hai tirato ${numeroGiocatore}, il computer ha tirato ${numeroComputer}. `;
+
   });
   
