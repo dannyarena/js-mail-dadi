@@ -50,5 +50,17 @@ const numeroComputer = Math.floor(Math.random() * 6) + 1;
 
 let messaggio = `Hai tirato ${numeroGiocatore}, il computer ha tirato ${numeroComputer}. `;
 
-  });
+if (numeroGiocatore > numeroComputer) {
+    messaggio += "Hai vinto! 🎉";
+  } else if (numeroGiocatore < numeroComputer) {
+    messaggio += "Hai perso! 😢";
+  } else {
+    messaggio += "Pareggio! 😐";
+  }
+
+  // Mostro il risultato nel paragrafo
+  diceResult.textContent = messaggio;
+});
+
+
   
